@@ -1,3 +1,14 @@
+# Global state management
+class AuthState:
+    def __init__(self):
+        self.session = None
+        self.otp_data = None
+        self.user_logged_in = False
+        self.user_details = None
+        self.preferred_language = None
+
+auth_state = AuthState()
+
 def get_available_countries():
     """
     Get a list of available regions (countries) and their region codes.
